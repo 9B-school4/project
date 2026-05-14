@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Притулки для тварин</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f8fa;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ececec;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff8f50;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ff8f50;
+    }
+
+    .hero {
+      padding: 90px 0 60px;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .hero-content h1 {
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      color: #666;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .shelters {
+      padding-bottom: 80px;
+      display: grid;
+      gap: 35px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 35px;
+      overflow: hidden;
+      border: 1px solid #ececec;
+      transition: 0.3s;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ff8f50;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+
+    .content {
+      padding: 35px;
+    }
+
+    .content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .info-box {
+      background: #fff7f2;
+      padding: 18px 22px;
+      border-radius: 18px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info-box strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #1f1f1f;
+    }
+
+    .info-box span {
+      color: #666;
+    }
+
+    .footer-text {
+      background: #1f1f22;
+      color: white;
+      border-radius: 35px;
+      padding: 50px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .footer-text h3 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .footer-text p {
+      color: #d1d1d1;
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    footer {
+      background: white;
+      border-top: 1px solid #ececec;
+      padding: 30px 0;
+      text-align: center;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+
+      .menu {
+        display: none;
+      }
+
+      .hero-content h1 {
+        font-size: 42px;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+      }
+
+      .content h2 {
+        font-size: 26px;
+      }
+
+      .footer-text {
+        padding: 40px 25px;
+      }
+
+      .footer-text h3 {
+        font-size: 28px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+
+      <nav>
+
+        <div class="logo">
+          PawHelp
+        </div>
+
+        <div class="menu">
+          <a href="index.html">Головна</a>
+          <a href="animals.html">Тварини</a>
+          <a href="eror.html">Допомога</a>
+          <a href="contact.html">Контакти</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <h1>
+          Притулки для тварин
+        </h1>
+
+        <p>
+          На жаль у нашому місті нема притулку для тварин,
+          але є в місті Кременчуг за такими адресами.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="shelters">
+
+    <div class="container">
+
+      <!-- CARD 1 -->
+      <div class="card">
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.9919708652953!2d33.40979106140783!3d49.07764418850122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d752e0efe23e47%3A0xcdd6c5261aef70c6!2z0JrQnyAi0KHQv9C10YbRgdC10YDQstGW0YEt0JrRgNC10LzQtdC90YfRg9C6Ig!5e1!3m2!1sru!2sua!4v1778780531974!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+          </iframe>
+        </div>
+
+        <div class="content">
+
+          <h2>Притулок «КП "Спецсервіс-Кременчук"»</h2>
+
+          <div class="info">
+
+            <div class="info-box">
+              <strong>Адреса</strong>
+              <span>м. Кременчуг, вул. вул. Лук'яненка, 48/75</span>
+            </div>
+
+            <div class="info-box">
+              <strong>Телефон</strong>
+              <span>+380 (67) 203 21 97</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+      <div class="card" style="margin-top: 35px;">
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.219712438566!2d33.41372739808243!3d49.07696938509655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d752e02de89eef%3A0xb938a1e189252fa4!2z0KHRg9C80YHQutCw0Y8g0YPQuy4sIDU5LCDQmtGA0LXQvNC10L3Rh9GD0LMsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzOTYwMA!5e1!3m2!1sru!2sua!4v1778780393039!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+
+        <div class="content">
+
+          <h2>Притулок «Кременчуцькі Хвостики»</h2>
+
+          <div class="info">
+
+            <div class="info-box">
+              <strong>Адреса</strong>
+              <span>м. Кременчуг, вул. Сумська, 59</span>
+            </div>
+
+            <div class="info-box">
+              <strong>Телефон</strong>
+              <span>+380 (97) 287 75 44</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="card" style="margin-top: 35px;">
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14612.213771626013!2d33.33924613767052!3d49.09434684654985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d74d404c83ff03%3A0x99e8aa4f9a32d490!2z0JrRgNC40LLRg9GI0LgsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzOTcwMg!5e1!3m2!1sru!2sua!4v1778781282480!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+
+        <div class="content">
+
+          <h2>Притулок «ГО "Кохані Безхатченки"»</h2>
+
+          <div class="info">
+
+            <div class="info-box">
+              <strong>Адреса</strong>
+              <span>с.Кривуши</span>
+            </div>
+
+            <div class="info-box">
+              <strong>Телефон</strong>
+              <span>+38 (096) 097 87 76</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div class="container">
+
+    <div class="footer-text">
+
+      <h3>
+        Важлива інформація
+      </h3>
+
+      <p>
+        Це не всі притулки в місті Кременчуг,
+        лише деяка їх частина.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    © 2026 PawHelp — Допомога тваринам
+  </footer>
+
+</body>
+</html>
