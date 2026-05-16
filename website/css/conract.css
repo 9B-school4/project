@@ -1,0 +1,132 @@
+.hero {
+  padding: 90px 0 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  color: #666;
+  font-size: 20px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.contacts-section {
+  padding-bottom: 80px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  padding: 35px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  background: #fff2e9;
+  border-radius: 22px;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-box {
+  background: #fff7f2;
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.info-box strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #1f1f1f;
+}
+
+.info-box span,
+.info-box a {
+  color: #666;
+  text-decoration: none;
+}
+
+.pawhelp-box {
+  margin-top: 40px;
+  background: #1f1f22;
+  color: white;
+  border-radius: 35px;
+  padding: 50px;
+  text-align: center;
+}
+
+.pawhelp-box h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.pawhelp-box p {
+  color: #d1d1d1;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.pawhelp-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.pawhelp-contact {
+  background: rgba(255,255,255,0.08);
+  padding: 20px 25px;
+  border-radius: 18px;
+  min-width: 260px;
+}
+
+.pawhelp-contact strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .pawhelp-box {
+    padding: 40px 25px;
+  }
+
+  .pawhelp-box h2 {
+    font-size: 32px;
+  }
+
+}

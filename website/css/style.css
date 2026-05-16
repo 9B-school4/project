@@ -1,0 +1,187 @@
+:root {
+  --accent: #ff8f50;
+  --accent-hover: #e97839;
+
+  --bg: #f7f8fa;
+  --text: #1f1f1f;
+  --muted: #666;
+
+  --white: #ffffff;
+
+  --border: #ececec;
+
+  --dark: #1f1f22;
+
+  --soft: #fff7f2;
+  --soft-2: #fff2e9;
+  --soft-3: #fff1e7;
+
+  --radius-lg: 35px;
+  --radius-md: 25px;
+  --radius-sm: 18px;
+
+  --shadow:
+    0 10px 35px rgba(0,0,0,0.05);
+
+  --shadow-hover:
+    0 20px 45px rgba(0,0,0,0.08);
+
+  --transition: 0.3s;
+}
+
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
+/* LAYOUT */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+
+/* HEADER */
+
+header {
+  background: var(--white);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.menu a:hover {
+  color: var(--accent);
+}
+
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+}
+
+
+/* COMMON CARDS */
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-hover);
+}
+
+
+/* COMMON ICON */
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* COMMON BOX */
+
+.box-soft {
+  background: var(--soft);
+  padding: 18px 22px;
+  border-radius: var(--radius-sm);
+}
+
+
+/* FOOTER */
+
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  
+
+}
